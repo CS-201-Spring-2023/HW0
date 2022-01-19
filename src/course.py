@@ -21,7 +21,7 @@ class Course:
         pass
 
     def __str__(self) -> str:
-        """Returns the string to be printed when this object is passed to print().
+        """Returns the string to be printed when this object is passed to str().
 
         The representation contains the course's title, hours, instructor name,
         and class time separated by newline.
@@ -40,7 +40,8 @@ class Course:
 
         assignment is represented by its title and weightage, e.g. ('HW1',
         10). It can be added to the list of assignments if adding the weightage
-        does not cause the total weightage to exceed 100. Otherwise it cannot
+        does not cause the total weightage to exceed 100 and the list does not
+        already contain an assignment with the same title. Otherwise it cannot
         and adding fails.
 
         Parameters:
@@ -49,6 +50,7 @@ class Course:
 
         Returns:
         True if adding assignment succeeds, False otherwise.
+
         """
         pass
 

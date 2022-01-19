@@ -13,13 +13,15 @@
 % \qformat{{\large\bf \thequestion. \thequestiontitle}\hfill[\totalpoints\ points]}
 \qformat{{\large\bf \thequestion. \thequestiontitle}\hfill}
 
+\pagestyle{empty}
+
 \begin{document}
 \maketitle
 
 The express purpose of this homework is to get you ready for your forthcoming assignments. It covers
 \begin{itemize}
 \item OOP in python
-\item Custom iterators in python
+\item Allowing native python functionality for your class
 \end{itemize}
 
 \begin{questions}
@@ -27,7 +29,6 @@ The express purpose of this homework is to get you ready for your forthcoming as
   \titledquestion{Introduction}
 You already know about OOP in C++. This homework will get you used to the corresponding syntax in python. Below is an example class in python.
 
-% \begin{lstlisting}[language=python,frame=single]
 \begin{python}
 class Car(object):
     num_wheels = 4
@@ -45,7 +46,6 @@ class Car(object):
         if self.wheels > 0:
             self.wheels -= 1
 \end{python}
-        % \end{lstlisting}
 
 \texttt{Line 1} is a class declaration. By convention, all python classes that do not derive from any other class, must derive from the \texttt{object} class. Leaving out this inheritance does not make much difference. All subsequent lines that are indented become part of the definition of this class.
 
@@ -92,7 +92,6 @@ Lines 14 to 20 illustrate calling member methods. They can be called via an inst
 
 \noindent\underline{Task}: Solve the exercises \href{https://pynative.com/python-object-oriented-programming-oop-exercise/}{here}.
 
-
 \titledquestion{Disciples of Discipline}
 
 Having experienced this heavy semester before, we would like to transfer our wisdom and help you guys plan and execute your semester courses' study plan in a very structured and disciplined manner. Therefore, we want you to create a portal for managing all of your individual courses which would then help you design a study plan and prioritize study materials as per the commitments of a respective course. We also want you all to learn the art of self-sufficient learning where you are confident with internet scanning when it comes to looking for answers for technical questions that one (and every born programmer) might encounter when coding. Thus, we will be providing you with links for concepts that you have to implement in this task; that you can consult, understand and then implement as per your requirements.
@@ -105,9 +104,42 @@ You will create a \pyth{Course} class to encapsulate all the important attribute
 
 \noindent\underline{Resources}: The classes make use of the \texttt{datetime.datetime} object which you can learn about \href{https://betterprogramming.pub/demystifying-python-datetime-module-with-examples-352e6cc72efc}{here}.
 
-\titledquestion{The Premier League}
+\titledquestion{Guten Appetit}
+
+You are a celebrated chef with many famous dishes to your name. A believer in open source, you are now looking to share your inventions with the world. A computer scientist at heart, you are developing a library which you will use to program your recipes. You will eventually disseminate this library so that not only do people learn of your recipes but they can use the library to program and share their recipes as well.
+
+Two of the classes in your library are \pyth{Ingredient} and \pyth{Recipe}. \pyth{Ingredient} stores a name. \pyth{Recipe} stores a name and \pyth{Ingredient} objects along with the required quantity in grams. Below is an example interaction with these classes.
+
+\begin{python}
+>>> my_recipe = Recipe('Stairway to Heaven')
+>>> my_recipe.add_ingredient(Ingredient('Sugar'), 10)
+>>> my_recipe.add_ingredient(Ingredient('Spice'), 10)
+>>> my_recipe.add_ingredient(Ingredient('Everything Nice'), 20)
+>>> my_recipe.add_ingredient(Ingredient('Chemical X'), 100)
+>>> len(my_recipe)  # number of ingredients
+4
+>>> for ing, amt in my_recipe:  # iterate over ingredients
+...     print(f'{ing}: {amt}g')
+... 
+Sugar: 10g
+Spice: 10g
+Everything Nice: 20g
+Chemical X: 100g
+\end{python}
+
+\noindent\underline{Task}: Write both classes in the accompanying file, \texttt{src/recipe.py}, such that they support this interaction.
+
+\noindent\underline{Resources}: There are several features you will need to learn about.
+\begin{itemize}
+\item Writing a custom iterator: See \href{https://treyhunner.com/2018/06/how-to-make-an-iterator-in-python/}{here} (first 3 sections only) for an insightful explanation and \href{https://www.geeksforgeeks.org/iterators-in-python/}{here} for a quick example.
+\item Calling \pyth{len()} on a custom class: Included in the above references..
+\item Tuple assignment and unpacking: See \href{https://runestone.academy/ns/books/published//fopp/Tuples/TupleAssignmentwithunpacking.html}{here}.
+\end{itemize}
 
 \end{questions}
+
+\vfill
+\centerline{------------------------------ viel Spa\ss\ ------------------------------}
 
 \end{document}
 
