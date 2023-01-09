@@ -7,7 +7,7 @@ auto/
 *.out
 *.pdf
 *.nosync
-*.synctex.gz
+hw0.synctex.gz
 *.fls
 *.fdb_latexmk
 solution/
