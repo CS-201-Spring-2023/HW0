@@ -1,5 +1,5 @@
 # Homework 0: OOP and Iterators in `python`
-# CS 201 Data Structures 2, Spring 2022
+# CS 201 Data Structures 2, Spring 2023
 ***
 
 # Purpose
