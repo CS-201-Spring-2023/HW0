@@ -15,7 +15,7 @@ To attempt and submit the task you will need
 
 # Grading
 
-Grading is done automatically by GitHub. It is recommended that you run `pytest test.py` locally and resolve any issues before `push`ing to your repository.
+Grading is done automatically by GitHub. It is recommended that you run `pytest test_course.py test_recipe.py` locally and resolve any issues before `push`ing to your repository.
 
 # Task
 
