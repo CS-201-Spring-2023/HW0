@@ -4,8 +4,27 @@
 
 # Purpose
 
-This assignment will acquaint you with the structure and format of forthcoming assignments. It is meant for your practice and is ungraded. There is no submission deadline but you are highly encouraged to attempt it so as to have an easier time with later, graded assignments.
+This assignment will acquaint you with the structure and format of forthcoming assignments. It is meant for your practice and is ungraded but you are highly encouraged to attempt it so as to have an easier time with later, graded assignments.
 
-Use the corresponding discussion thread on Canvas to discuss this assignment.
+# Background
+
+To attempt and submit the task you will need
+- familiarity with python programming
+- familiarity with `pytest`
+- comfort with GitHub
+
+# Grading
+
+Grading is done automatically by GitHub. It is recommended that you run `pytest test.py` locally and resolve any issues before `push`ing to your repository.
+
+# Task
+
+The task for this HW0 is explained in the accompanying prompt which is to be compiled in LaTeX. Your score as shown on GitHub at the time of the deadline will be your score in this WC.
+
+# Deadline and discussion
+
+_Deadline_: 2359h on Sun, 20 Jan
+
+For discussion on the HW0, please use the related Canvas discussion thread.
 
 viel Spass!
