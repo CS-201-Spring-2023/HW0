@@ -19,11 +19,11 @@ Grading is done automatically by GitHub. It is recommended that you run `pytest 
 
 # Task
 
-The task for this HW0 is explained in the accompanying prompt which is to be compiled in LaTeX. Your score as shown on GitHub at the time of the deadline will be your score in this WC.
+The task for this HW0 is explained in the accompanying prompt which is to be compiled in LaTeX. Your score as shown on GitHub at the time of the deadline will be your score in this HW0.
 
 # Deadline and discussion
 
-_Deadline_: 2359h on Sun, 20 Jan
+_Deadline_: 2359h on Friday, 20 Jan
 
 For discussion on the HW0, please use the related Canvas discussion thread.
 
